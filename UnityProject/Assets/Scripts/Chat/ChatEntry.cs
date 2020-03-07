@@ -53,7 +53,7 @@ public class ChatEntry : MonoBehaviour
 		{
 			if (isCoolingDown)
 			{
-				//coCoolDown = StartCoroutine(CoolDown());
+				coCoolDown = StartCoroutine(CoolDown());
 			}
 		}
 	}
@@ -214,7 +214,7 @@ public class ChatEntry : MonoBehaviour
 		{
 			if (coCoolDown != null) StopCoroutine(coCoolDown);
 
-			//coCoolDown = StartCoroutine(CoolDown());
+			coCoolDown = StartCoroutine(CoolDown());
 		}
 		else
 		{
@@ -271,12 +271,12 @@ public class ChatEntry : MonoBehaviour
 		if (isCoolingDown)
 		{
 			if (coCoolDown != null) StopCoroutine(coCoolDown);
-			//coCoolDown = StartCoroutine(CoolDown());
+			coCoolDown = StartCoroutine(CoolDown());
 		}
 		else
 		{
 			isCoolingDown = true;
-			//coCoolDown = StartCoroutine(CoolDown());
+			coCoolDown = StartCoroutine(CoolDown());
 		}
 	}
 
